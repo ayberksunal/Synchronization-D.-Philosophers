@@ -5,6 +5,7 @@ The dining philosophers problem is: how do you make sure every philosopher gets 
 
 
 HOW DO WE SOLVE?
+
 Philosophers are numerated from 0 to 4 and they share a circular table. In this table philoso- phers who are even numbered get the right chopstick firstly and then get the left chopstick. If the philosopher number is odd numbered, he gets the left chopstick firstly and then get the right chopstick. To run this methodology, I get help from the pthears(mutex). I created 5 threads for chopsticks and philosophers and I controlled the turn with these threads with locking and opening.
 
 IF philosopher number even RIGHT => LEFT
